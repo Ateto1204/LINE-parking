@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct LINE_parkingApp: App {
+    @StateObject var appStatus = APPStatus()
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(appStatus)
         }
     }
 }

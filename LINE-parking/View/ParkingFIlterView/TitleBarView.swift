@@ -8,10 +8,20 @@
 import SwiftUI
 
 struct TitleBarView: View {
+    @EnvironmentObject var appStatus: APPStatus
     let titleName: String
     var body: some View {
         VStack {
-            HStack {
+            HStack(spacing: 15) {
+                Button {
+                    appStatus.status = .HOME
+                } label: {
+                    Image(systemName: "arrowshape.backward")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 30)
+                        .foregroundColor(.white)
+                }
                 Text(titleName)
                     .font(.title)
                     .bold()

@@ -8,10 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var appStatus: APPStatus
     var body: some View {
-        VStack(spacing: 0) {
-            TitleBarView(titleName: "LINE Parking")
-            ParkingListView()
+        switch appStatus.status {
+        case .HOME:
+            HomeView()
+        case .LIST:
+            ParkingList()
+        case .STAR:
+            Text("")
         }
     }
 }
