@@ -21,6 +21,13 @@
 		1BB7A6F22BC8F50200C97704 /* DisplayParkingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB7A6F12BC8F50200C97704 /* DisplayParkingListView.swift */; };
 		1BFEE4EA2BC8F67C00DD4DD6 /* RemainingItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFEE4E92BC8F67C00DD4DD6 /* RemainingItemView.swift */; };
 		1BFEE4EC2BC8F6B800DD4DD6 /* RemainingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFEE4EB2BC8F6B800DD4DD6 /* RemainingType.swift */; };
+		1BFEE4FC2BC92AEB00DD4DD6 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFEE4FB2BC92AEB00DD4DD6 /* FilterView.swift */; };
+		1BFEE4FE2BC92B0900DD4DD6 /* FilterSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFEE4FD2BC92B0900DD4DD6 /* FilterSheetView.swift */; };
+		1BFEE5002BC92B2500DD4DD6 /* CloseSheetButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFEE4FF2BC92B2500DD4DD6 /* CloseSheetButton.swift */; };
+		1BFEE5022BC92B4400DD4DD6 /* SheetDoneButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFEE5012BC92B4400DD4DD6 /* SheetDoneButton.swift */; };
+		1BFEE5042BC92B5E00DD4DD6 /* FilterItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFEE5032BC92B5E00DD4DD6 /* FilterItemListView.swift */; };
+		1BFEE5062BC92B7800DD4DD6 /* FilterItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFEE5052BC92B7800DD4DD6 /* FilterItemView.swift */; };
+		1BFEE5082BC92B9900DD4DD6 /* SheetTitleBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFEE5072BC92B9900DD4DD6 /* SheetTitleBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +47,13 @@
 		1BB7A6F12BC8F50200C97704 /* DisplayParkingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayParkingListView.swift; sourceTree = "<group>"; };
 		1BFEE4E92BC8F67C00DD4DD6 /* RemainingItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemainingItemView.swift; sourceTree = "<group>"; };
 		1BFEE4EB2BC8F6B800DD4DD6 /* RemainingType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemainingType.swift; sourceTree = "<group>"; };
+		1BFEE4FB2BC92AEB00DD4DD6 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
+		1BFEE4FD2BC92B0900DD4DD6 /* FilterSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterSheetView.swift; sourceTree = "<group>"; };
+		1BFEE4FF2BC92B2500DD4DD6 /* CloseSheetButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseSheetButton.swift; sourceTree = "<group>"; };
+		1BFEE5012BC92B4400DD4DD6 /* SheetDoneButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetDoneButton.swift; sourceTree = "<group>"; };
+		1BFEE5032BC92B5E00DD4DD6 /* FilterItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterItemListView.swift; sourceTree = "<group>"; };
+		1BFEE5052BC92B7800DD4DD6 /* FilterItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterItemView.swift; sourceTree = "<group>"; };
+		1BFEE5072BC92B9900DD4DD6 /* SheetTitleBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetTitleBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,14 +86,9 @@
 		1BB7A6D32BC8AA2C00C97704 /* LINE-parking */ = {
 			isa = PBXGroup;
 			children = (
-				1BFEE4E82BC8F65200DD4DD6 /* RemainingBar */,
-				1BB7A6ED2BC8EB1400C97704 /* ParkingListView.swift */,
-				1BB7A6EB2BC8EA8900C97704 /* WifiSlashView.swift */,
-				1BB7A6F12BC8F50200C97704 /* DisplayParkingListView.swift */,
-				1BB7A6E92BC8EA1500C97704 /* TitleBarView.swift */,
-				1BB7A6E72BC8E9AB00C97704 /* ApiController.swift */,
-				1BB7A6E52BC8E97700C97704 /* NetworkManager.swift */,
-				1BB7A6E32BC8E95400C97704 /* ParkingSpot.swift */,
+				1BFEE4F92BC91AB700DD4DD6 /* Model */,
+				1BFEE4F82BC91A9D00DD4DD6 /* Controller */,
+				1BFEE4F62BC91A2F00DD4DD6 /* View */,
 				1BB7A6D42BC8AA2C00C97704 /* LINE_parkingApp.swift */,
 				1BB7A6D62BC8AA2C00C97704 /* ContentView.swift */,
 				1BB7A6D82BC8AA2E00C97704 /* Assets.xcassets */,
@@ -105,6 +114,58 @@
 				1BFEE4EB2BC8F6B800DD4DD6 /* RemainingType.swift */,
 			);
 			path = RemainingBar;
+			sourceTree = "<group>";
+		};
+		1BFEE4F62BC91A2F00DD4DD6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1BFEE4F72BC91A6B00DD4DD6 /* ParkingListView */,
+				1BFEE4FA2BC92ABE00DD4DD6 /* ParkingFIlterView */,
+				1BB7A6EB2BC8EA8900C97704 /* WifiSlashView.swift */,
+				1BB7A6E92BC8EA1500C97704 /* TitleBarView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1BFEE4F72BC91A6B00DD4DD6 /* ParkingListView */ = {
+			isa = PBXGroup;
+			children = (
+				1BB7A6ED2BC8EB1400C97704 /* ParkingListView.swift */,
+				1BB7A6F12BC8F50200C97704 /* DisplayParkingListView.swift */,
+				1BFEE4E82BC8F65200DD4DD6 /* RemainingBar */,
+			);
+			path = ParkingListView;
+			sourceTree = "<group>";
+		};
+		1BFEE4F82BC91A9D00DD4DD6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1BB7A6E52BC8E97700C97704 /* NetworkManager.swift */,
+				1BB7A6E72BC8E9AB00C97704 /* ApiController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1BFEE4F92BC91AB700DD4DD6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1BB7A6E32BC8E95400C97704 /* ParkingSpot.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1BFEE4FA2BC92ABE00DD4DD6 /* ParkingFIlterView */ = {
+			isa = PBXGroup;
+			children = (
+				1BFEE4FF2BC92B2500DD4DD6 /* CloseSheetButton.swift */,
+				1BFEE4FB2BC92AEB00DD4DD6 /* FilterView.swift */,
+				1BFEE4FD2BC92B0900DD4DD6 /* FilterSheetView.swift */,
+				1BFEE5012BC92B4400DD4DD6 /* SheetDoneButton.swift */,
+				1BFEE5032BC92B5E00DD4DD6 /* FilterItemListView.swift */,
+				1BFEE5052BC92B7800DD4DD6 /* FilterItemView.swift */,
+				1BFEE5072BC92B9900DD4DD6 /* SheetTitleBarView.swift */,
+			);
+			path = ParkingFIlterView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,14 +238,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BFEE4FC2BC92AEB00DD4DD6 /* FilterView.swift in Sources */,
+				1BFEE5062BC92B7800DD4DD6 /* FilterItemView.swift in Sources */,
 				1BB7A6EC2BC8EA8900C97704 /* WifiSlashView.swift in Sources */,
+				1BFEE4FE2BC92B0900DD4DD6 /* FilterSheetView.swift in Sources */,
 				1BFEE4EA2BC8F67C00DD4DD6 /* RemainingItemView.swift in Sources */,
 				1BFEE4EC2BC8F6B800DD4DD6 /* RemainingType.swift in Sources */,
+				1BFEE5082BC92B9900DD4DD6 /* SheetTitleBarView.swift in Sources */,
 				1BB7A6E62BC8E97700C97704 /* NetworkManager.swift in Sources */,
+				1BFEE5002BC92B2500DD4DD6 /* CloseSheetButton.swift in Sources */,
 				1BB7A6F22BC8F50200C97704 /* DisplayParkingListView.swift in Sources */,
 				1BB7A6EA2BC8EA1500C97704 /* TitleBarView.swift in Sources */,
+				1BFEE5042BC92B5E00DD4DD6 /* FilterItemListView.swift in Sources */,
 				1BB7A6EE2BC8EB1400C97704 /* ParkingListView.swift in Sources */,
 				1BB7A6D72BC8AA2C00C97704 /* ContentView.swift in Sources */,
+				1BFEE5022BC92B4400DD4DD6 /* SheetDoneButton.swift in Sources */,
 				1BB7A6F02BC8F44500C97704 /* RemainingBarView.swift in Sources */,
 				1BB7A6E82BC8E9AB00C97704 /* ApiController.swift in Sources */,
 				1BB7A6D52BC8AA2C00C97704 /* LINE_parkingApp.swift in Sources */,

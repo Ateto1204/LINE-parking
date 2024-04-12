@@ -27,6 +27,7 @@ struct DisplayParkingListView: View {
             } else {
                 ProgressView()
             }
+            FilterView()
         }
         .onAppear {
             controller.fetchData()
