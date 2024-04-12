@@ -7,19 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1BB7A6D52BC8AA2C00C97704 /* Tainan_parkingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB7A6D42BC8AA2C00C97704 /* Tainan_parkingApp.swift */; };
+		1BB7A6D52BC8AA2C00C97704 /* LINE_parkingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB7A6D42BC8AA2C00C97704 /* LINE_parkingApp.swift */; };
 		1BB7A6D72BC8AA2C00C97704 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB7A6D62BC8AA2C00C97704 /* ContentView.swift */; };
 		1BB7A6D92BC8AA2E00C97704 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BB7A6D82BC8AA2E00C97704 /* Assets.xcassets */; };
 		1BB7A6DD2BC8AA2E00C97704 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BB7A6DC2BC8AA2E00C97704 /* Preview Assets.xcassets */; };
+		1BB7A6E42BC8E95400C97704 /* ParkingSpot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB7A6E32BC8E95400C97704 /* ParkingSpot.swift */; };
+		1BB7A6E62BC8E97700C97704 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB7A6E52BC8E97700C97704 /* NetworkManager.swift */; };
+		1BB7A6E82BC8E9AB00C97704 /* ApiController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB7A6E72BC8E9AB00C97704 /* ApiController.swift */; };
+		1BB7A6EA2BC8EA1500C97704 /* TitleBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB7A6E92BC8EA1500C97704 /* TitleBarView.swift */; };
+		1BB7A6EC2BC8EA8900C97704 /* WifiSlashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB7A6EB2BC8EA8900C97704 /* WifiSlashView.swift */; };
+		1BB7A6EE2BC8EB1400C97704 /* ParkingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB7A6ED2BC8EB1400C97704 /* ParkingListView.swift */; };
+		1BB7A6F02BC8F44500C97704 /* RemainingBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB7A6EF2BC8F44500C97704 /* RemainingBarView.swift */; };
+		1BB7A6F22BC8F50200C97704 /* DisplayParkingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB7A6F12BC8F50200C97704 /* DisplayParkingListView.swift */; };
+		1BFEE4EA2BC8F67C00DD4DD6 /* RemainingItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFEE4E92BC8F67C00DD4DD6 /* RemainingItemView.swift */; };
+		1BFEE4EC2BC8F6B800DD4DD6 /* RemainingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFEE4EB2BC8F6B800DD4DD6 /* RemainingType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1BB7A6D12BC8AA2C00C97704 /* Tainan-parking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tainan-parking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1BB7A6D42BC8AA2C00C97704 /* Tainan_parkingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tainan_parkingApp.swift; sourceTree = "<group>"; };
+		1BB7A6D12BC8AA2C00C97704 /* LINE-parking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LINE-parking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BB7A6D42BC8AA2C00C97704 /* LINE_parkingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LINE_parkingApp.swift; sourceTree = "<group>"; };
 		1BB7A6D62BC8AA2C00C97704 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1BB7A6D82BC8AA2E00C97704 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1BB7A6DA2BC8AA2E00C97704 /* Tainan_parking.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tainan_parking.entitlements; sourceTree = "<group>"; };
+		1BB7A6DA2BC8AA2E00C97704 /* LINE_parking.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LINE_parking.entitlements; sourceTree = "<group>"; };
 		1BB7A6DC2BC8AA2E00C97704 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1BB7A6E32BC8E95400C97704 /* ParkingSpot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingSpot.swift; sourceTree = "<group>"; };
+		1BB7A6E52BC8E97700C97704 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		1BB7A6E72BC8E9AB00C97704 /* ApiController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiController.swift; sourceTree = "<group>"; };
+		1BB7A6E92BC8EA1500C97704 /* TitleBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleBarView.swift; sourceTree = "<group>"; };
+		1BB7A6EB2BC8EA8900C97704 /* WifiSlashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WifiSlashView.swift; sourceTree = "<group>"; };
+		1BB7A6ED2BC8EB1400C97704 /* ParkingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingListView.swift; sourceTree = "<group>"; };
+		1BB7A6EF2BC8F44500C97704 /* RemainingBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemainingBarView.swift; sourceTree = "<group>"; };
+		1BB7A6F12BC8F50200C97704 /* DisplayParkingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayParkingListView.swift; sourceTree = "<group>"; };
+		1BFEE4E92BC8F67C00DD4DD6 /* RemainingItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemainingItemView.swift; sourceTree = "<group>"; };
+		1BFEE4EB2BC8F6B800DD4DD6 /* RemainingType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemainingType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,7 +56,7 @@
 		1BB7A6C82BC8AA2C00C97704 = {
 			isa = PBXGroup;
 			children = (
-				1BB7A6D32BC8AA2C00C97704 /* Tainan-parking */,
+				1BB7A6D32BC8AA2C00C97704 /* LINE-parking */,
 				1BB7A6D22BC8AA2C00C97704 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,21 +64,29 @@
 		1BB7A6D22BC8AA2C00C97704 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1BB7A6D12BC8AA2C00C97704 /* Tainan-parking.app */,
+				1BB7A6D12BC8AA2C00C97704 /* LINE-parking.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1BB7A6D32BC8AA2C00C97704 /* Tainan-parking */ = {
+		1BB7A6D32BC8AA2C00C97704 /* LINE-parking */ = {
 			isa = PBXGroup;
 			children = (
-				1BB7A6D42BC8AA2C00C97704 /* Tainan_parkingApp.swift */,
+				1BFEE4E82BC8F65200DD4DD6 /* RemainingBar */,
+				1BB7A6ED2BC8EB1400C97704 /* ParkingListView.swift */,
+				1BB7A6EB2BC8EA8900C97704 /* WifiSlashView.swift */,
+				1BB7A6F12BC8F50200C97704 /* DisplayParkingListView.swift */,
+				1BB7A6E92BC8EA1500C97704 /* TitleBarView.swift */,
+				1BB7A6E72BC8E9AB00C97704 /* ApiController.swift */,
+				1BB7A6E52BC8E97700C97704 /* NetworkManager.swift */,
+				1BB7A6E32BC8E95400C97704 /* ParkingSpot.swift */,
+				1BB7A6D42BC8AA2C00C97704 /* LINE_parkingApp.swift */,
 				1BB7A6D62BC8AA2C00C97704 /* ContentView.swift */,
 				1BB7A6D82BC8AA2E00C97704 /* Assets.xcassets */,
-				1BB7A6DA2BC8AA2E00C97704 /* Tainan_parking.entitlements */,
+				1BB7A6DA2BC8AA2E00C97704 /* LINE_parking.entitlements */,
 				1BB7A6DB2BC8AA2E00C97704 /* Preview Content */,
 			);
-			path = "Tainan-parking";
+			path = "LINE-parking";
 			sourceTree = "<group>";
 		};
 		1BB7A6DB2BC8AA2E00C97704 /* Preview Content */ = {
@@ -69,12 +97,22 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		1BFEE4E82BC8F65200DD4DD6 /* RemainingBar */ = {
+			isa = PBXGroup;
+			children = (
+				1BB7A6EF2BC8F44500C97704 /* RemainingBarView.swift */,
+				1BFEE4E92BC8F67C00DD4DD6 /* RemainingItemView.swift */,
+				1BFEE4EB2BC8F6B800DD4DD6 /* RemainingType.swift */,
+			);
+			path = RemainingBar;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1BB7A6D02BC8AA2C00C97704 /* Tainan-parking */ = {
+		1BB7A6D02BC8AA2C00C97704 /* LINE-parking */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1BB7A6E02BC8AA2E00C97704 /* Build configuration list for PBXNativeTarget "Tainan-parking" */;
+			buildConfigurationList = 1BB7A6E02BC8AA2E00C97704 /* Build configuration list for PBXNativeTarget "LINE-parking" */;
 			buildPhases = (
 				1BB7A6CD2BC8AA2C00C97704 /* Sources */,
 				1BB7A6CE2BC8AA2C00C97704 /* Frameworks */,
@@ -84,9 +122,9 @@
 			);
 			dependencies = (
 			);
-			name = "Tainan-parking";
+			name = "LINE-parking";
 			productName = "Tainan-parking";
-			productReference = 1BB7A6D12BC8AA2C00C97704 /* Tainan-parking.app */;
+			productReference = 1BB7A6D12BC8AA2C00C97704 /* LINE-parking.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -104,7 +142,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1BB7A6CC2BC8AA2C00C97704 /* Build configuration list for PBXProject "Tainan-parking" */;
+			buildConfigurationList = 1BB7A6CC2BC8AA2C00C97704 /* Build configuration list for PBXProject "LINE-parking" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -117,7 +155,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1BB7A6D02BC8AA2C00C97704 /* Tainan-parking */,
+				1BB7A6D02BC8AA2C00C97704 /* LINE-parking */,
 			);
 		};
 /* End PBXProject section */
@@ -139,8 +177,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BB7A6EC2BC8EA8900C97704 /* WifiSlashView.swift in Sources */,
+				1BFEE4EA2BC8F67C00DD4DD6 /* RemainingItemView.swift in Sources */,
+				1BFEE4EC2BC8F6B800DD4DD6 /* RemainingType.swift in Sources */,
+				1BB7A6E62BC8E97700C97704 /* NetworkManager.swift in Sources */,
+				1BB7A6F22BC8F50200C97704 /* DisplayParkingListView.swift in Sources */,
+				1BB7A6EA2BC8EA1500C97704 /* TitleBarView.swift in Sources */,
+				1BB7A6EE2BC8EB1400C97704 /* ParkingListView.swift in Sources */,
 				1BB7A6D72BC8AA2C00C97704 /* ContentView.swift in Sources */,
-				1BB7A6D52BC8AA2C00C97704 /* Tainan_parkingApp.swift in Sources */,
+				1BB7A6F02BC8F44500C97704 /* RemainingBarView.swift in Sources */,
+				1BB7A6E82BC8E9AB00C97704 /* ApiController.swift in Sources */,
+				1BB7A6D52BC8AA2C00C97704 /* LINE_parkingApp.swift in Sources */,
+				1BB7A6E42BC8E95400C97704 /* ParkingSpot.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,10 +314,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Tainan-parking/Tainan_parking.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "LINE-parking/LINE_parking.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Tainan-parking/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"LINE-parking/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -287,7 +335,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.4;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "ateto1202.Tainan-parking";
+				PRODUCT_BUNDLE_IDENTIFIER = "ateto1202.LINE-parking";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -302,10 +350,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Tainan-parking/Tainan_parking.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "LINE-parking/LINE_parking.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Tainan-parking/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"LINE-parking/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -323,7 +371,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.4;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "ateto1202.Tainan-parking";
+				PRODUCT_BUNDLE_IDENTIFIER = "ateto1202.LINE-parking";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -336,7 +384,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1BB7A6CC2BC8AA2C00C97704 /* Build configuration list for PBXProject "Tainan-parking" */ = {
+		1BB7A6CC2BC8AA2C00C97704 /* Build configuration list for PBXProject "LINE-parking" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1BB7A6DE2BC8AA2E00C97704 /* Debug */,
@@ -345,7 +393,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1BB7A6E02BC8AA2E00C97704 /* Build configuration list for PBXNativeTarget "Tainan-parking" */ = {
+		1BB7A6E02BC8AA2E00C97704 /* Build configuration list for PBXNativeTarget "LINE-parking" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1BB7A6E12BC8AA2E00C97704 /* Debug */,
