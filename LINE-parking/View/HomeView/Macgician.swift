@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct Magician: View {
+    let bubleColor = Color(red: 121/255, green: 226/255, blue: 120/255) // 121,226,120
+    
     var body: some View {
         HStack {
             Spacer()
@@ -19,19 +21,23 @@ struct Magician: View {
                         .scaleEffect(x: -1, y: 1)
                         .rotationEffect(.degrees(270))
                         .frame(width: 180)
-                        .foregroundColor(.green)
+                        .foregroundColor(bubleColor)
                         .shadow(radius: 4)
                 }
-                Button {
-                    
-                } label: {
-                    Image(systemName: "heart.fill")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 76)
-                        .offset(x: -13)
-                        .shadow(radius: 3)
-                        .foregroundColor(.red)
+                VStack {
+                    Text("我的最愛")
+                        .padding(.trailing, 23)
+                    Button {
+                        
+                    } label: {
+                        Image(systemName: "heart.fill")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 76)
+                            .offset(x: -13)
+                            .shadow(radius: 3)
+                            .foregroundColor(.red)
+                    }
                 }
             }
             VStack {
@@ -47,4 +53,8 @@ struct Magician: View {
         }
         .padding()
     }
+}
+
+#Preview {
+    Magician()
 }

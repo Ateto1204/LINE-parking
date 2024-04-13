@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct RemainingBarView: View {
-    var parkingSpot: ParkingSpot
+    var parkingSpot: ParkingData
     var body: some View {
         HStack {
             RemainingItemView(type: .LARGE, spot: parkingSpot)

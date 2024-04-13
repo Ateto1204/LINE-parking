@@ -30,16 +30,19 @@ struct HeroView: View {
                     .foregroundColor(.white)
                     .offset(x: -14)
                     .shadow(radius: 4)
-                Button {
-                    appStatus.status = .LIST
-                } label: {
-                    Image(systemName: "mail.and.text.magnifyingglass")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 80)
-                        .shadow(radius: 3)
-                        .offset(x: 2)
-                        .foregroundColor(.blue)
+                VStack(spacing: 20) {
+                    Text("找停車塲")
+                    Button {
+                        appStatus.appStatus = .LIST
+                    } label: {
+                        Image(systemName: "mail.and.text.magnifyingglass")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 80)
+                            .shadow(radius: 3)
+                            .offset(x: 2)
+                            .foregroundColor(.blue)
+                    }
                 }
             }
             Spacer()
@@ -47,4 +50,8 @@ struct HeroView: View {
         .padding()
         .offset(x: -23)
     }
+}
+
+#Preview {
+    HeroView()
 }

@@ -10,10 +10,10 @@ import SwiftUI
 struct FilterItemListView: View {
     var body: some View {
         List {
-            FilterItemView(title: "Large Car")
-            FilterItemView(title: "Small Car")
-            FilterItemView(title: "Disable Car")
-            FilterItemView(title: "Scooter Car")
+            FilterItemView(title: "Large Car", type: .LARGE)
+            FilterItemView(title: "Small Car", type: .SMALL)
+            FilterItemView(title: "Disable Car", type: .DISABLE)
+            FilterItemView(title: "Scooter Car", type: .SCOOTER)
         }
     }
 }

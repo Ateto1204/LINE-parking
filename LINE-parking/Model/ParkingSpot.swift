@@ -7,14 +7,20 @@
 
 import Foundation
 
-struct ParkingSpot: Codable {
+struct ParkingSpot {
+    var spot: ParkingData
+    var liked: Bool
+}
+
+struct ParkingData: Codable {
     var name: String
     var address: String
     var phone: String?
     var largeCar: Int
-    var smallCar: Int
+    var smallCar: Int 
     var disableCar: Int
     var motorcycle: Int
+    var liked: Bool?
     
     enum CodingKeys: String, CodingKey {
         case name = "停車場名稱"
@@ -24,5 +30,6 @@ struct ParkingSpot: Codable {
         case smallCar = "一般小型車"
         case disableCar = "身障者小型車"
         case motorcycle = "一般機車"
+        case liked
     }
 }

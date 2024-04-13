@@ -15,3 +15,7 @@ struct ParkingList: View {
         }
     }
 }
+
+#Preview {
+    ParkingList()
+}

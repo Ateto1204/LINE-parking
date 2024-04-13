@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @EnvironmentObject var appStatus: APPStatus
     var body: some View {
-        switch appStatus.status {
+        switch appStatus.appStatus {
         case .HOME:
             HomeView()
         case .LIST:

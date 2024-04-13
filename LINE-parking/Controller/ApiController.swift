@@ -19,9 +19,11 @@ class Controller: ObservableObject {
                     let (data, _) = try await URLSession.shared.data(from: url)
                     internetStatus = true
                     let decoder = JSONDecoder()
-                    let spots = try decoder.decode([ParkingSpot].self, from: data)
+                    let spots = try decoder.decode([ParkingData].self, from: data)
                     DispatchQueue.main.async {
-                        self.parkingSpots = spots
+                        for spot in spots {
+                            self.parkingSpots.append(ParkingSpot(spot: spot, liked: false))
+                        }
                     }
                 } catch {
                     let errorCode = (error as NSError).code

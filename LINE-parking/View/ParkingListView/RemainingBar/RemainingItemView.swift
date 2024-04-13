@@ -9,11 +9,11 @@ import SwiftUI
 
 struct RemainingItemView: View {
     let type: RemainingType
-    let spot: ParkingSpot
+    let spot: ParkingData
     let icon: String
     let remaining: Int
     
-    init(type: RemainingType, spot: ParkingSpot) {
+    init(type: RemainingType, spot: ParkingData) {
         self.type = type
         self.spot = spot
         

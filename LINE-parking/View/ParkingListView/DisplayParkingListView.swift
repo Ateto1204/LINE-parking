@@ -8,8 +8,12 @@
 import SwiftUI
 
 struct DisplayParkingListView: View {
+    @EnvironmentObject var appStatus: APPStatus
+    
     @ObservedObject var controller = Controller()
+    
     @State var parkingSpots: [ParkingSpot] = []
+    
     var body: some View {
         ZStack {
             if controller.internetStatus == false {
@@ -17,10 +21,26 @@ struct DisplayParkingListView: View {
             } else if parkingSpots.count > 0 {
                 List {
                     ForEach(parkingSpots.indices) { item in
-                        VStack(alignment: .leading, spacing: 12) {
-                            Text(parkingSpots[item].name)
-                                .font(.subheadline)
-                            RemainingBarView(parkingSpot: parkingSpots[item])
+                        HStack {
+                            Button {
+                                parkingSpots[item].liked.toggle()
+                                appStatus.toggleLoveSpot(spot: parkingSpots[item])
+                            } label: {
+                                Image(systemName: appStatus.isLiked(spot: parkingSpots[item]) ? "heart.fill" : "heart")
+                                    .foregroundColor(.red)
+                                    .opacity(appStatus.isLiked(spot: parkingSpots[item]) ? 1 : 0.5)
+                                    .padding(.trailing)
+                            }
+                            Button {
+                                
+                            } label: {
+                                VStack(alignment: .leading, spacing: 12) {
+                                    Text(parkingSpots[item].spot.name)
+                                        .foregroundColor(.black)
+                                        .font(.subheadline)
+                                    RemainingBarView(parkingSpot: parkingSpots[item].spot)
+                                }
+                            }
                         }
                     }
                 }

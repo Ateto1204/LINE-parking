@@ -145,10 +145,10 @@
 		1BFEE4F72BC91A6B00DD4DD6 /* ParkingListView */ = {
 			isa = PBXGroup;
 			children = (
+				1BFEE5182BC97AF900DD4DD6 /* ParkingList.swift */,
 				1BB7A6ED2BC8EB1400C97704 /* ParkingListView.swift */,
 				1BB7A6F12BC8F50200C97704 /* DisplayParkingListView.swift */,
 				1BFEE4E82BC8F65200DD4DD6 /* RemainingBar */,
-				1BFEE5182BC97AF900DD4DD6 /* ParkingList.swift */,
 			);
 			path = ParkingListView;
 			sourceTree = "<group>";

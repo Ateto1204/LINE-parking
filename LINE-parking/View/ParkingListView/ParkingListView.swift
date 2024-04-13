@@ -13,6 +13,7 @@ struct ParkingListView: View {
         ZStack {
             Spacer()
                 .frame(height: .infinity)
+                .ignoresSafeArea()
             if networkManager.isNetworkAvailable {
                 DisplayParkingListView()
             } else {

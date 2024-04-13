@@ -8,14 +8,17 @@
 import SwiftUI
 
 struct FilterItemView: View {
-    @State var isPicked = true
+    @EnvironmentObject var appStatus: APPStatus
+    
     let title: String
+    let type: RemainingType
+    
     var body: some View {
         HStack(spacing: 15) {
             Button {
-                isPicked.toggle()
+                appStatus.toggleFilterStatus(type: type)
             } label: {
-                Image(systemName: isPicked ? "checkmark.square.fill" : "square")
+                Image(systemName: appStatus.getFilterStatus(type: type) ? "checkmark.square.fill" : "square")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 17)

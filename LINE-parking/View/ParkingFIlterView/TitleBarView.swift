@@ -14,7 +14,7 @@ struct TitleBarView: View {
         VStack {
             HStack(spacing: 15) {
                 Button {
-                    appStatus.status = .HOME
+                    appStatus.appStatus = .HOME
                 } label: {
                     Image(systemName: "arrowshape.backward")
                         .resizable()
