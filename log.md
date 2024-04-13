@@ -1,5 +1,14 @@
 # Project log
 
+#### 2024. 04. 14
+- Handle problem of screen crash
+- Add animation from pow package
+
+#### 2024. 04. 13
+- Complete filter
+- Complete love list
+- Complete info sharing
+
 #### 2024. 04. 12
 - Design the screen view.
 
