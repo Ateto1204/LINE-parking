@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B14DB2A2BCAE32E00B09E4B /* Pow in Frameworks */ = {isa = PBXBuildFile; productRef = 1B14DB292BCAE32E00B09E4B /* Pow */; };
 		1BB7A6D52BC8AA2C00C97704 /* LINE_parkingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB7A6D42BC8AA2C00C97704 /* LINE_parkingApp.swift */; };
 		1BB7A6D72BC8AA2C00C97704 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB7A6D62BC8AA2C00C97704 /* ContentView.swift */; };
 		1BB7A6D92BC8AA2E00C97704 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BB7A6D82BC8AA2E00C97704 /* Assets.xcassets */; };
@@ -83,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B14DB2A2BCAE32E00B09E4B /* Pow in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +227,9 @@
 			dependencies = (
 			);
 			name = "LINE-parking";
+			packageProductDependencies = (
+				1B14DB292BCAE32E00B09E4B /* Pow */,
+			);
 			productName = "Tainan-parking";
 			productReference = 1BB7A6D12BC8AA2C00C97704 /* LINE-parking.app */;
 			productType = "com.apple.product-type.application";
@@ -253,6 +258,9 @@
 				Base,
 			);
 			mainGroup = 1BB7A6C82BC8AA2C00C97704;
+			packageReferences = (
+				1B14DB282BCAE32E00B09E4B /* XCRemoteSwiftPackageReference "Pow" */,
+			);
 			productRefGroup = 1BB7A6D22BC8AA2C00C97704 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -523,6 +531,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1B14DB282BCAE32E00B09E4B /* XCRemoteSwiftPackageReference "Pow" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/EmergeTools/Pow";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1B14DB292BCAE32E00B09E4B /* Pow */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1B14DB282BCAE32E00B09E4B /* XCRemoteSwiftPackageReference "Pow" */;
+			productName = Pow;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1BB7A6C92BC8AA2C00C97704 /* Project object */;
 }

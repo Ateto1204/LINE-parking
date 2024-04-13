@@ -10,13 +10,17 @@ import SwiftUI
 struct ContentView: View {
     @EnvironmentObject var appStatus: APPStatus
     var body: some View {
-        switch appStatus.appStatus {
-        case .HOME:
-            HomeView()
-        case .LIST:
-            ParkingList()
-        case .STAR:
-            LoveList()
+        ZStack {
+            switch appStatus.appStatus {
+            case .HOME:
+                HomeView()
+            case .LIST:
+                ParkingList()
+            case .STAR:
+                LoveList()
+            case .CONTENT:
+                ParkingDataView()
+            }
         }
     }
 }

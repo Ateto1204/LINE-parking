@@ -12,11 +12,14 @@ class APPStatus: ObservableObject {
         case HOME
         case STAR
         case LIST
+        case CONTENT
     }
     
     @Published var appStatus: AppStatus = .HOME
+    @Published var lastAppStatus: AppStatus = .HOME
     @Published var fliterStatus: [Bool] = [false, false, false, false]
     @Published var LoveSpots: [ParkingSpot] = []
+    @Published var displaySpot = ParkingSpot(spot: ParkingData(name: "", address: "", largeCar: 0, smallCar: 0, disableCar: 0, motorcycle: 0), liked: false)
     
     func toggleFilterStatus(type: RemainingType) {
         switch type {

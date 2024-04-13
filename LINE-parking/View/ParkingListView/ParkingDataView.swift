@@ -6,63 +6,89 @@
 //
 
 import SwiftUI
+import Pow
 
 struct ParkingDataView: View {
     @EnvironmentObject var appStatus: APPStatus
-    @Binding var spots: [ParkingSpot]
-    @Binding var idx: Int
-    @Binding var show: Bool
+    @State var animating = false
     
     var body: some View {
         ZStack {
             VStack {
-                CloseSheetButton(showFilter: $show)
+                HStack {
+                    Button {
+                        withAnimation {
+                            self.animating = false
+                        }
+                        DispatchQueue.main.asyncAfter(deadline: .now() + (0.5)) {
+                            appStatus.appStatus = appStatus.lastAppStatus
+                        }
+                    } label: {
+                        Text("BACK")
+                            .shadow(radius: 1.4)
+                    }
+                    .padding()
+                    Spacer()
+                }
                 Spacer()
             }
-            VStack {
+            if animating {
                 HStack {
                     VStack(alignment: .leading, spacing: 16) {
                         HStack {
-                            ShareLink("", item: appStatus.shareInfo(spot: spots[idx].spot))
-                            Text(spots[idx].spot.name)
+                            ShareLink("", item: appStatus.shareInfo(spot: appStatus.displaySpot.spot))
+                            Text(appStatus.displaySpot.spot.name)
                                 .font(.title)
                                 .bold()
                             Button {
-                                spots[idx].liked.toggle()
-                                appStatus.toggleLoveSpot(spot: spots[idx])
+                                withAnimation {
+                                    appStatus.displaySpot.liked.toggle()
+                                }
+                                appStatus.toggleLoveSpot(spot: appStatus.displaySpot)
                             } label: {
-                                Image(systemName: appStatus.isLiked(spot: spots[idx]) ? "heart.fill" : "heart")
-                                    .foregroundColor(.red)
-                                    .opacity(appStatus.isLiked(spot: spots[idx]) ? 1 : 0.5)
-                                    .padding(.leading)
+                                if appStatus.isLiked(spot: appStatus.displaySpot) {
+                                    Image(systemName: "heart.fill")
+                                        .foregroundColor(.red)
+                                        .opacity(1)
+                                        .transition(
+                                          .movingParts.pop(.red)
+                                        )
+                                } else {
+                                    Image(systemName: "heart")
+                                        .foregroundColor(.red)
+                                        .opacity(0.5)
+                                        .transition(.identity)
+                                }
                             }
-                            
+                            .padding(.leading)
                         }
-                        Text("地址：\(spots[idx].spot.address)")
+                        Text("地址：\(appStatus.displaySpot.spot.address)")
                         
-                        Text("大型車：\(spots[idx].spot.largeCar)")
-                        Text("小型車：\(spots[idx].spot.smallCar)")
-                        Text("無障礙：\(spots[idx].spot.disableCar)")
-                        Text("機慢車：\(spots[idx].spot.motorcycle)")
+                        Text("大型車：\(appStatus.displaySpot.spot.largeCar)")
+                        Text("小型車：\(appStatus.displaySpot.spot.smallCar)")
+                        Text("無障礙：\(appStatus.displaySpot.spot.disableCar)")
+                        Text("機慢車：\(appStatus.displaySpot.spot.motorcycle)")
                     }
                     .padding()
                     Spacer()
                 }
                 .padding()
-                Button {
-                    show = false
-                } label: {
-                    Text("CLOSE")
-                        .foregroundColor(.white)
-                        .font(.callout)
-                        .bold()
-                        .padding()
-                        .background(
-                            RoundedRectangle(cornerRadius: 11)
-                                .foregroundColor(.gray)
-                                .shadow(radius: 4)
-                        )
-                }
+                .transition(
+                  .asymmetric(
+                      insertion: .movingParts.move(
+                        angle: .degrees(45)
+                      ),
+                      removal: .movingParts.move(
+                        angle: .degrees(-135)
+                      )
+                  ).combined(with: .opacity)
+                )
+                
+            }
+        }
+        .onAppear() {
+            withAnimation {
+                self.animating = true
             }
         }
     }

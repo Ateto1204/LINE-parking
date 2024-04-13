@@ -13,8 +13,6 @@ struct DisplayParkingListView: View {
     @ObservedObject var controller = Controller()
     
     @State var parkingSpots: [ParkingSpot] = []
-    @State var showParkingData = false
-    @State var sheetIdx = 0
     
     var body: some View {
         ZStack {
@@ -30,8 +28,9 @@ struct DisplayParkingListView: View {
                                     .opacity(appStatus.isLiked(spot: parkingSpots[item]) ? 1 : 0.5)
                                     .padding(.trailing)
                                 Button {
-                                    self.sheetIdx = item
-                                    self.showParkingData = true
+                                    appStatus.displaySpot = parkingSpots[item]
+                                    appStatus.lastAppStatus = .LIST
+                                    appStatus.appStatus = .CONTENT
                                 } label: {
                                     VStack(alignment: .leading, spacing: 12) {
                                         Text(parkingSpots[item].spot.name)
@@ -39,9 +38,6 @@ struct DisplayParkingListView: View {
                                             .font(.subheadline)
                                         RemainingBarView(parkingSpot: parkingSpots[item].spot)
                                     }
-                                }
-                                .sheet(isPresented: $showParkingData) {
-                                    ParkingDataView(spots: $parkingSpots, idx: $sheetIdx, show: $showParkingData)
                                 }
                             }
                         }
