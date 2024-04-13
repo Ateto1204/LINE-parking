@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct Magician: View {
+    @EnvironmentObject var appStatus: APPStatus
     let bubleColor = Color(red: 121/255, green: 226/255, blue: 120/255) // 121,226,120
     
     var body: some View {
@@ -28,7 +29,7 @@ struct Magician: View {
                     Text("我的最愛")
                         .padding(.trailing, 23)
                     Button {
-                        
+                        appStatus.appStatus = .STAR
                     } label: {
                         Image(systemName: "heart.fill")
                             .resizable()

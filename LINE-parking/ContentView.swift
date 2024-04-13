@@ -16,7 +16,7 @@ struct ContentView: View {
         case .LIST:
             ParkingList()
         case .STAR:
-            Text("")
+            LoveList()
         }
     }
 }

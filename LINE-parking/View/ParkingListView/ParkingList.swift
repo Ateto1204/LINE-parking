@@ -16,6 +16,23 @@ struct ParkingList: View {
     }
 }
 
+struct LoveList: View {
+    @EnvironmentObject var appStatus: APPStatus
+    var body: some View {
+        TitleBarView(titleName: "My Parking")
+        List {
+            ForEach(appStatus.LoveSpots.indices) { item in
+                VStack(alignment: .leading, spacing: 12) {
+                    Text(appStatus.LoveSpots[item].spot.name)
+                        .foregroundColor(.black)
+                        .font(.subheadline)
+                    RemainingBarView(parkingSpot: appStatus.LoveSpots[item].spot)
+                }
+            }
+        }
+    }
+}
+
 #Preview {
     ParkingList()
 }

@@ -21,24 +21,26 @@ struct DisplayParkingListView: View {
             } else if parkingSpots.count > 0 {
                 List {
                     ForEach(parkingSpots.indices) { item in
-                        HStack {
-                            Button {
-                                parkingSpots[item].liked.toggle()
-                                appStatus.toggleLoveSpot(spot: parkingSpots[item])
-                            } label: {
-                                Image(systemName: appStatus.isLiked(spot: parkingSpots[item]) ? "heart.fill" : "heart")
-                                    .foregroundColor(.red)
-                                    .opacity(appStatus.isLiked(spot: parkingSpots[item]) ? 1 : 0.5)
-                                    .padding(.trailing)
-                            }
-                            Button {
-                                
-                            } label: {
-                                VStack(alignment: .leading, spacing: 12) {
-                                    Text(parkingSpots[item].spot.name)
-                                        .foregroundColor(.black)
-                                        .font(.subheadline)
-                                    RemainingBarView(parkingSpot: parkingSpots[item].spot)
+                        if filter(spot: parkingSpots[item].spot) {
+                            HStack {
+                                Button {
+                                    parkingSpots[item].liked.toggle()
+                                    appStatus.toggleLoveSpot(spot: parkingSpots[item])
+                                } label: {
+                                    Image(systemName: appStatus.isLiked(spot: parkingSpots[item]) ? "heart.fill" : "heart")
+                                        .foregroundColor(.red)
+                                        .opacity(appStatus.isLiked(spot: parkingSpots[item]) ? 1 : 0.5)
+                                        .padding(.trailing)
+                                }
+                                Button {
+                                    
+                                } label: {
+                                    VStack(alignment: .leading, spacing: 12) {
+                                        Text(parkingSpots[item].spot.name)
+                                            .foregroundColor(.black)
+                                            .font(.subheadline)
+                                        RemainingBarView(parkingSpot: parkingSpots[item].spot)
+                                    }
                                 }
                             }
                         }
@@ -55,5 +57,29 @@ struct DisplayParkingListView: View {
         .onChange(of: controller.parkingSpots.count) {
             self.parkingSpots = controller.parkingSpots
         }
+    }
+    
+    func filter(spot: ParkingData) -> Bool {
+        if appStatus.getFilterStatus(type: .LARGE) {
+            if spot.largeCar == 0 {
+                return false
+            }
+        }
+        if appStatus.getFilterStatus(type: .SMALL) {
+            if spot.smallCar == 0 {
+                return false
+            }
+        }
+        if appStatus.getFilterStatus(type: .DISABLE) {
+            if spot.disableCar == 0 {
+                return false
+            }
+        }
+        if appStatus.getFilterStatus(type: .SCOOTER) {
+            if spot.motorcycle == 0 {
+                return false
+            }
+        }
+        return true
     }
 }
