@@ -15,7 +15,7 @@ class APPStatus: ObservableObject {
     }
     
     @Published var appStatus: AppStatus = .HOME
-    @Published var fliterStatus: [Bool] = [true, true, true, true]
+    @Published var fliterStatus: [Bool] = [false, false, false, false]
     @Published var LoveSpots: [ParkingSpot] = []
     
     func toggleFilterStatus(type: RemainingType) {
@@ -68,5 +68,12 @@ class APPStatus: ObservableObject {
             }
         }
         return false
+    }
+    
+    func shareInfo(spot: ParkingData) -> String {
+        return "嘿！這是我在 LINE Parking 上找到的免費停車場：\n\n" +
+        "\(spot.name)\n地址：\(spot.address)\n大型車車位：\(spot.largeCar)\n" +
+        "小型車車位：\(spot.smallCar)\n無障礙車位：\(spot.disableCar)\n" +
+        "機慢車車位：\(spot.motorcycle)\n\n"
     }
 }

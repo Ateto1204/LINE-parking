@@ -51,7 +51,3 @@ struct HeroView: View {
         .offset(x: -23)
     }
 }
-
-#Preview {
-    HeroView()
-}

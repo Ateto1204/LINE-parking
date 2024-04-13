@@ -13,6 +13,8 @@ struct DisplayParkingListView: View {
     @ObservedObject var controller = Controller()
     
     @State var parkingSpots: [ParkingSpot] = []
+    @State var showParkingData = false
+    @State var sheetIdx = 0
     
     var body: some View {
         ZStack {
@@ -23,17 +25,13 @@ struct DisplayParkingListView: View {
                     ForEach(parkingSpots.indices) { item in
                         if filter(spot: parkingSpots[item].spot) {
                             HStack {
+                                Image(systemName: appStatus.isLiked(spot: parkingSpots[item]) ? "heart.fill" : "heart")
+                                    .foregroundColor(.red)
+                                    .opacity(appStatus.isLiked(spot: parkingSpots[item]) ? 1 : 0.5)
+                                    .padding(.trailing)
                                 Button {
-                                    parkingSpots[item].liked.toggle()
-                                    appStatus.toggleLoveSpot(spot: parkingSpots[item])
-                                } label: {
-                                    Image(systemName: appStatus.isLiked(spot: parkingSpots[item]) ? "heart.fill" : "heart")
-                                        .foregroundColor(.red)
-                                        .opacity(appStatus.isLiked(spot: parkingSpots[item]) ? 1 : 0.5)
-                                        .padding(.trailing)
-                                }
-                                Button {
-                                    
+                                    self.sheetIdx = item
+                                    self.showParkingData = true
                                 } label: {
                                     VStack(alignment: .leading, spacing: 12) {
                                         Text(parkingSpots[item].spot.name)
@@ -41,6 +39,9 @@ struct DisplayParkingListView: View {
                                             .font(.subheadline)
                                         RemainingBarView(parkingSpot: parkingSpots[item].spot)
                                     }
+                                }
+                                .sheet(isPresented: $showParkingData) {
+                                    ParkingDataView(spots: $parkingSpots, idx: $sheetIdx, show: $showParkingData)
                                 }
                             }
                         }
@@ -58,28 +59,5 @@ struct DisplayParkingListView: View {
             self.parkingSpots = controller.parkingSpots
         }
     }
-    
-    func filter(spot: ParkingData) -> Bool {
-        if appStatus.getFilterStatus(type: .LARGE) {
-            if spot.largeCar == 0 {
-                return false
-            }
-        }
-        if appStatus.getFilterStatus(type: .SMALL) {
-            if spot.smallCar == 0 {
-                return false
-            }
-        }
-        if appStatus.getFilterStatus(type: .DISABLE) {
-            if spot.disableCar == 0 {
-                return false
-            }
-        }
-        if appStatus.getFilterStatus(type: .SCOOTER) {
-            if spot.motorcycle == 0 {
-                return false
-            }
-        }
-        return true
-    }
+ 
 }
