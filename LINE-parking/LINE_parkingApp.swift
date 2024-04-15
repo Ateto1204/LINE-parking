@@ -17,3 +17,7 @@ struct LINE_parkingApp: App {
         }
     }
 }
+
+#Preview {
+    Image("AppIcon")
+}

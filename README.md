@@ -47,3 +47,7 @@
 <div style="text-align:center;">
   <img src="DEMO/demo6.png" alt="Image" style="width:245px;">
 </div>
+
+<div style="text-align:center;">
+  <img src="DEMO/demo7.png" alt="Image" style="width:245px;">
+</div>

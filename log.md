@@ -1,5 +1,8 @@
 # Project log
 
+#### 2024. 04. 15
+- Add button linking to google maps navigation
+
 #### 2024. 04. 14
 - Handle problem of screen crash
 - Add animation from pow package
