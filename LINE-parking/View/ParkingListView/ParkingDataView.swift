@@ -46,7 +46,6 @@ struct ParkingDataView: View {
                       )
                   ).combined(with: .opacity)
                 )
-                
             }
         }
         .onAppear() {
