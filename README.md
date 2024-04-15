@@ -14,6 +14,12 @@
   <img src="DEMO/kanban.png" alt="Image" style="width:445px;">
 </div>
 
+## Architecture Design
+採用 MVC 架構模式
+````
+Model (Data repositories) --> Controller (Get event) --> View (Presentation)
+````
+
 ## Demo
 <video width="320" height="240" controls>
     <source src="DEMO/video.mp4" type="video/mp4">
