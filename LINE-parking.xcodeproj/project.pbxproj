@@ -20,6 +20,7 @@
 		1BB7A6EE2BC8EB1400C97704 /* ParkingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB7A6ED2BC8EB1400C97704 /* ParkingListView.swift */; };
 		1BB7A6F02BC8F44500C97704 /* RemainingBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB7A6EF2BC8F44500C97704 /* RemainingBarView.swift */; };
 		1BB7A6F22BC8F50200C97704 /* DisplayParkingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB7A6F12BC8F50200C97704 /* DisplayParkingListView.swift */; };
+		1BF7E3F72BCCF4870078EE72 /* ParkingDataContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF7E3F62BCCF4870078EE72 /* ParkingDataContentView.swift */; };
 		1BFEE4EA2BC8F67C00DD4DD6 /* RemainingItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFEE4E92BC8F67C00DD4DD6 /* RemainingItemView.swift */; };
 		1BFEE4EC2BC8F6B800DD4DD6 /* RemainingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFEE4EB2BC8F6B800DD4DD6 /* RemainingType.swift */; };
 		1BFEE4FC2BC92AEB00DD4DD6 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFEE4FB2BC92AEB00DD4DD6 /* FilterView.swift */; };
@@ -57,6 +58,7 @@
 		1BB7A6ED2BC8EB1400C97704 /* ParkingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingListView.swift; sourceTree = "<group>"; };
 		1BB7A6EF2BC8F44500C97704 /* RemainingBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemainingBarView.swift; sourceTree = "<group>"; };
 		1BB7A6F12BC8F50200C97704 /* DisplayParkingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayParkingListView.swift; sourceTree = "<group>"; };
+		1BF7E3F62BCCF4870078EE72 /* ParkingDataContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingDataContentView.swift; sourceTree = "<group>"; };
 		1BFEE4E92BC8F67C00DD4DD6 /* RemainingItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemainingItemView.swift; sourceTree = "<group>"; };
 		1BFEE4EB2BC8F6B800DD4DD6 /* RemainingType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemainingType.swift; sourceTree = "<group>"; };
 		1BFEE4FB2BC92AEB00DD4DD6 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 				1BFEE4FA2BC92ABE00DD4DD6 /* ParkingFIlterView */,
 				1BB7A6EB2BC8EA8900C97704 /* WifiSlashView.swift */,
 				1BFEE4FF2BC92B2500DD4DD6 /* CloseSheetButton.swift */,
+				1BF7E3F62BCCF4870078EE72 /* ParkingDataContentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 				1BFEE5152BC97A2400DD4DD6 /* Macgician.swift in Sources */,
 				1BFEE5132BC9795500DD4DD6 /* HomeTitleView.swift in Sources */,
 				1BB7A6D52BC8AA2C00C97704 /* LINE_parkingApp.swift in Sources */,
+				1BF7E3F72BCCF4870078EE72 /* ParkingDataContentView.swift in Sources */,
 				1BB7A6E42BC8E95400C97704 /* ParkingSpot.swift in Sources */,
 				1BFEE50A2BC93B7100DD4DD6 /* FilterStatus.swift in Sources */,
 			);
