@@ -7,12 +7,12 @@
 
 import Foundation
 
-class Controller: ObservableObject {
+class ApiController: ObservableObject {
     @Published var parkingSpots: [ParkingSpot] = []
     @Published var internetStatus = true
     private let apiUrl = "https://citypark.tainan.gov.tw/App/parking.ashx?verCode=5177E3481D&type=1&ftype=1&exportTo=2"
 
-    func fetchData() {
+    func fetchData() async {
         if let url = URL(string: apiUrl) {
             Task {
                 do {

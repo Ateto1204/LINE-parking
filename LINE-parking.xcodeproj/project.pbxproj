@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B0067372BD206990057B909 /* EmptyLoveList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0067362BD206990057B909 /* EmptyLoveList.swift */; };
 		1B14DB2A2BCAE32E00B09E4B /* Pow in Frameworks */ = {isa = PBXBuildFile; productRef = 1B14DB292BCAE32E00B09E4B /* Pow */; };
 		1BB7A6D52BC8AA2C00C97704 /* LINE_parkingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB7A6D42BC8AA2C00C97704 /* LINE_parkingApp.swift */; };
 		1BB7A6D72BC8AA2C00C97704 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB7A6D62BC8AA2C00C97704 /* ContentView.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B0067362BD206990057B909 /* EmptyLoveList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyLoveList.swift; sourceTree = "<group>"; };
 		1BB7A6D12BC8AA2C00C97704 /* LINE-parking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LINE-parking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BB7A6D42BC8AA2C00C97704 /* LINE_parkingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LINE_parkingApp.swift; sourceTree = "<group>"; };
 		1BB7A6D62BC8AA2C00C97704 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -93,6 +95,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B0067352BD206650057B909 /* LoveParkingList */ = {
+			isa = PBXGroup;
+			children = (
+				1BFEE51C2BCA6CED00DD4DD6 /* LoveList.swift */,
+				1B0067362BD206990057B909 /* EmptyLoveList.swift */,
+			);
+			path = LoveParkingList;
+			sourceTree = "<group>";
+		};
 		1BB7A6C82BC8AA2C00C97704 = {
 			isa = PBXGroup;
 			children = (
@@ -157,12 +168,12 @@
 		1BFEE4F72BC91A6B00DD4DD6 /* ParkingListView */ = {
 			isa = PBXGroup;
 			children = (
+				1B0067352BD206650057B909 /* LoveParkingList */,
 				1BFEE5182BC97AF900DD4DD6 /* ParkingList.swift */,
 				1BB7A6ED2BC8EB1400C97704 /* ParkingListView.swift */,
 				1BB7A6F12BC8F50200C97704 /* DisplayParkingListView.swift */,
 				1BFEE4E82BC8F65200DD4DD6 /* RemainingBar */,
 				1BFEE51A2BCA556B00DD4DD6 /* ParkingDataView.swift */,
-				1BFEE51C2BCA6CED00DD4DD6 /* LoveList.swift */,
 			);
 			path = ParkingListView;
 			sourceTree = "<group>";
@@ -305,6 +316,7 @@
 				1BFEE5172BC97AD400DD4DD6 /* HeroView.swift in Sources */,
 				1BB7A6E62BC8E97700C97704 /* NetworkManager.swift in Sources */,
 				1BFEE5002BC92B2500DD4DD6 /* CloseSheetButton.swift in Sources */,
+				1B0067372BD206990057B909 /* EmptyLoveList.swift in Sources */,
 				1BB7A6F22BC8F50200C97704 /* DisplayParkingListView.swift in Sources */,
 				1BFEE5192BC97AF900DD4DD6 /* ParkingList.swift in Sources */,
 				1BB7A6EA2BC8EA1500C97704 /* TitleBarView.swift in Sources */,

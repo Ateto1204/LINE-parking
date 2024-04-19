@@ -13,14 +13,13 @@ struct ParkingSpot {
 }
 
 struct ParkingData: Codable {
-    var name: String
-    var address: String
+    let name: String
+    let address: String
     var phone: String?
     var largeCar: Int
     var smallCar: Int 
     var disableCar: Int
     var motorcycle: Int
-    var liked: Bool?
     
     enum CodingKeys: String, CodingKey {
         case name = "停車場名稱"
@@ -30,6 +29,5 @@ struct ParkingData: Codable {
         case smallCar = "一般小型車"
         case disableCar = "身障者小型車"
         case motorcycle = "一般機車"
-        case liked
     }
 }
